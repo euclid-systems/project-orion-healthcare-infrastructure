@@ -1,0 +1,22 @@
+[Unit]
+Description=Project Orion DICOM Storage SCP
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=oriondicom
+Group=oriondicom
+WorkingDirectory=/var/lib/orion-mod01/incoming
+ExecStart=/usr/bin/storescp -v -aet ORION-MOD01 -od /var/lib/orion-mod01/incoming 11112
+Restart=on-failure
+RestartSec=2
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/orion-mod01/incoming
+
+[Install]
+WantedBy=multi-user.target
