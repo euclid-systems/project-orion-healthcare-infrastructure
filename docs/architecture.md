@@ -93,13 +93,9 @@ Current infrastructure records include:
 
 
 | Host | Address |
-
 |---|---|
-
 | `orion-dc01.orion.lab` | 192.168.174.10 |
-
 | `orion-pacs01.orion.lab` | 192.168.174.20 |
-
 | `orion-mod01.orion.lab` | 192.168.174.30 |
 
 
@@ -139,13 +135,9 @@ ORION-PACS01 provides the central DICOM/PACS workload.
 
 
 | Service | TCP Port |
-
 |---|---:|
-
 | SSH | 22 |
-
 | DICOM | 4242 |
-
 | Orthanc HTTP / REST API | 8042 |
 
 
@@ -219,11 +211,8 @@ The primary DICOM endpoints are:
 
 
 | System | AE Title | Address | Port |
-
 |---|---|---|---:|
-
 | ORION-PACS01 | ORION-PACS01 | 192.168.174.20 | 4242 |
-
 | ORION-MOD01 | ORION-MOD01 | 192.168.174.30 | 11112 |
 
 
@@ -291,5 +280,6 @@ Project Orion is a lab environment and is not presented as a production healthca
 
 
 TLS-protected application access and additional security controls are planned for later project phases.
+
 
 
