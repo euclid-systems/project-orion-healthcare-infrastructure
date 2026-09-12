@@ -33,13 +33,9 @@ All Orion systems communicate through the VMware VMnet8 NAT network.
 
 
 | System | IPv4 Address | Operating System | Primary Role |
-
 |---|---|---|---|
-
 | ORION-DC01 | 192.168.174.10 | Windows Server 2025 | Active Directory Domain Services / DNS |
-
 | ORION-PACS01 | 192.168.174.20 | Ubuntu Server 24.04 LTS | Orthanc PACS |
-
 | ORION-MOD01 | 192.168.174.30 | Ubuntu Server 24.04 LTS | Simulated DICOM modality |
 
 
