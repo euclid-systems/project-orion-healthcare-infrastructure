@@ -1,0 +1,43 @@
+{
+  "Name": "ORION-PACS01",
+
+  "StorageDirectory": "/var/lib/orthanc/db-v6",
+  "IndexDirectory": "/var/lib/orthanc/db-v6",
+
+  "HttpPort": 8042,
+  "RemoteAccessAllowed": true,
+  "AuthenticationEnabled": true,
+  "SslEnabled": false,
+
+  "DicomAet": "ORION-PACS01",
+  "DicomPort": 4242,
+
+  "DicomCheckCalledAet": true,
+  "DicomCheckModalityHost": true,
+
+  "DicomAlwaysAllowEcho": false,
+  "DicomAlwaysAllowStore": false,
+  "DicomAlwaysAllowFind": false,
+  "DicomAlwaysAllowFindWorklist": false,
+  "DicomAlwaysAllowGet": false,
+  "DicomAlwaysAllowMove": false,
+
+  "DicomModalitiesInDatabase": false,
+
+  "DicomModalities": {
+    "orion-mod01": {
+      "AET": "ORION-MOD01",
+      "Host": "192.168.174.30",
+      "Port": 11112,
+      "Manufacturer": "Generic",
+
+      "AllowEcho": true,
+      "AllowFind": true,
+      "AllowFindWorklist": false,
+      "AllowGet": false,
+      "AllowMove": true,
+      "AllowStore": true,
+      "AllowStorageCommitment": false
+    }
+  }
+}
