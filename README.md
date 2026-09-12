@@ -16,6 +16,17 @@ The project focuses on infrastructure engineering, systems administration, netwo
 
 Project Orion currently consists of three virtual servers running within VMware Workstation on an isolated NAT network.
 
+```mermaid
+flowchart LR
+    DC["ORION-DC01<br/>AD DS / DNS<br/>192.168.174.10"]
+    PACS["ORION-PACS01<br/>Orthanc PACS<br/>192.168.174.20"]
+    MOD["ORION-MOD01<br/>DICOM Modality<br/>192.168.174.30"]
+
+    DC -->|DNS| PACS
+    DC -->|DNS| MOD
+    MOD <-->|DICOM| PACS
+```
+
 | System | Address | Platform | Role |
 |---|---|---|---|
 | ORION-DC01 | 192.168.174.10 | Windows Server 2025 | Active Directory / DNS |
@@ -24,6 +35,8 @@ Project Orion currently consists of three virtual servers running within VMware 
 
 **Network:** `192.168.174.0/24`  
 **Internal DNS domain:** `orion.lab`
+
+For detailed infrastructure design, service roles, storage architecture, and DICOM communication flows, see [Architecture Documentation](docs/architecture.md).
 
 ---
 
