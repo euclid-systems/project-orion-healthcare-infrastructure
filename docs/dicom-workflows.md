@@ -19,11 +19,8 @@ The lab is used to validate DICOM association behavior, storage, query/retrieve 
 
 
 | System | AE Title | Address | Port | Role |
-
 |---|---|---|---:|---|
-
 | ORION-PACS01 | ORION-PACS01 | 192.168.174.20 | 4242 | PACS / DICOM SCP |
-
 | ORION-MOD01 | ORION-MOD01 | 192.168.174.30 | 11112 | Simulated modality / Storage SCP |
 
 
@@ -127,4 +124,5 @@ sequenceDiagram
 &#x20;   MOD-->>PACS: C-STORE success
 
 &#x20;   PACS-->>MOD: C-MOVE final success
+
 
