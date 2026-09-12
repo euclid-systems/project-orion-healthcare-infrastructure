@@ -64,6 +64,4 @@ Default Orthanc settings, comments, credentials, and unrelated configuration hav
 
 No credentials or private keys should be committed to this repository.
 
-Repository exclusions are defined in the root `.gitignore`.
-
 Configuration examples should always be reviewed and sanitized before being added to source control.

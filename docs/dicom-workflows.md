@@ -1,8 +1,8 @@
-\# DICOM Workflows
+# DICOM Workflows
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -14,7 +14,7 @@ The lab is used to validate DICOM association behavior, storage, query/retrieve 
 
 
 
-\## DICOM Endpoints
+## DICOM Endpoints
 
 
 
@@ -25,11 +25,11 @@ The lab is used to validate DICOM association behavior, storage, query/retrieve 
 
 
 
-\## Validated DIMSE Services
+## Validated DIMSE Services
 
 
 
-\### C-ECHO — Verification
+### C-ECHO — Verification
 
 
 
@@ -45,7 +45,7 @@ Project Orion has validated C-ECHO in both directions between the registered PAC
 
 
 
-\### C-STORE — Storage
+### C-STORE — Storage
 
 
 
@@ -61,7 +61,7 @@ ORION-PACS01 can also establish a separate association back to ORION-MOD01 and t
 
 
 
-\### C-FIND — Query
+### C-FIND — Query
 
 
 
@@ -77,7 +77,7 @@ C-FIND access is denied globally and granted specifically to the registered ORIO
 
 
 
-\### C-MOVE — Retrieve
+### C-MOVE — Retrieve
 
 
 
