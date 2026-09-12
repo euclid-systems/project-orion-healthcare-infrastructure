@@ -1,8 +1,8 @@
-\# Project Orion Architecture
+# Project Orion Architecture
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -18,17 +18,17 @@ All Orion systems communicate through the VMware VMnet8 NAT network.
 
 
 
-\## Network Architecture
+## Network Architecture
 
 
 
-\*\*Network:\*\* `192.168.174.0/24`  
+**Network:** `192.168.174.0/24`  
 
-\*\*Default gateway:\*\* `192.168.174.2`  
+**Default gateway:** `192.168.174.2`  
 
-\*\*VMware host interface:\*\* `192.168.174.1`  
+**VMware host interface:** `192.168.174.1`  
 
-\*\*Internal DNS domain:\*\* `orion.lab`
+**Internal DNS domain:** `orion.lab`
 
 
 
@@ -44,7 +44,7 @@ All Orion systems communicate through the VMware VMnet8 NAT network.
 
 
 
-\## ORION-DC01
+## ORION-DC01
 
 
 
@@ -52,7 +52,7 @@ ORION-DC01 provides the identity and name-resolution foundation for the lab.
 
 
 
-\### Services
+### Services
 
 
 
@@ -64,15 +64,15 @@ ORION-DC01 provides the identity and name-resolution foundation for the lab.
 
 
 
-\### Active Directory
+### Active Directory
 
 
 
-\*\*Forest:\*\* `orion.lab`  
+**Forest:** `orion.lab`  
 
-\*\*Domain:\*\* `orion.lab`  
+**Domain:** `orion.lab`  
 
-\*\*NetBIOS domain:\*\* `ORION`
+**NetBIOS domain:** `ORION`
 
 
 
@@ -84,7 +84,7 @@ ORION-DC01 currently holds all FSMO roles because Project Orion uses a single-do
 
 
 
-\### DNS
+### DNS
 
 
 
@@ -116,7 +116,7 @@ The Windows VMware host uses a Name Resolution Policy Table (NRPT) rule that for
 
 
 
-\## ORION-PACS01
+## ORION-PACS01
 
 
 
@@ -124,7 +124,7 @@ ORION-PACS01 provides the central DICOM/PACS workload.
 
 
 
-\### Platform
+### Platform
 
 
 
@@ -138,7 +138,7 @@ ORION-PACS01 provides the central DICOM/PACS workload.
 
 
 
-\### Network Services
+### Network Services
 
 
 
@@ -154,7 +154,7 @@ ORION-PACS01 provides the central DICOM/PACS workload.
 
 
 
-\### Storage Architecture
+### Storage Architecture
 
 
 
@@ -174,7 +174,7 @@ This provides a dedicated filesystem for PACS data and allows the application-da
 
 
 
-\## ORION-MOD01
+## ORION-MOD01
 
 
 
@@ -182,7 +182,7 @@ ORION-MOD01 simulates a network-connected medical imaging modality.
 
 
 
-\### Platform
+### Platform
 
 
 
@@ -192,13 +192,13 @@ ORION-MOD01 simulates a network-connected medical imaging modality.
 
 
 
-\### DICOM Identity
+### DICOM Identity
 
 
 
-\*\*AE Title:\*\* `ORION-MOD01`  
+**AE Title:** `ORION-MOD01`  
 
-\*\*Storage SCP port:\*\* `11112`
+**Storage SCP port:** `11112`
 
 
 
@@ -214,7 +214,7 @@ Received DICOM objects are written to:
 
 
 
-\## DICOM Communication
+## DICOM Communication
 
 
 
@@ -260,7 +260,7 @@ C-MOVE uses two separate DICOM associations:
 
 
 
-\## Security Boundaries
+## Security Boundaries
 
 
 
@@ -295,4 +295,5 @@ Project Orion is a lab environment and is not presented as a production healthca
 
 
 TLS-protected application access and additional security controls are planned for later project phases.
+
 
