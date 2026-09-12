@@ -91,6 +91,15 @@ For detailed infrastructure design, service roles, storage architecture, and DIC
 
 ---
 
+## Documentation
+
+- [Architecture](docs/architecture.md)
+- [DICOM Workflows](docs/dicom-workflows.md)
+- [Security](docs/security.md)
+- [Validation and Testing](docs/testing.md)
+- [Troubleshooting and Engineering Investigations](docs/troubleshooting.md)
+- [Configuration Samples](configs/README.md)
+
 ## Engineering Approach
 
 Project Orion is built around verification rather than configuration alone.
