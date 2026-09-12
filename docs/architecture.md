@@ -16,7 +16,23 @@ The environment currently consists of three virtual machines hosted in VMware Wo
 
 All Orion systems communicate through the VMware VMnet8 NAT network.
 
+## Logical Architecture
 
+```mermaid
+flowchart TB
+    HOST["VESSEL<br/>Windows Workstation<br/>VMware Workstation"]
+
+    subgraph VMNET["VMnet8 NAT — 192.168.174.0/24"]
+        DC["ORION-DC01<br/>192.168.174.10<br/>Windows Server 2025<br/>AD DS / DNS"]
+        PACS["ORION-PACS01<br/>192.168.174.20<br/>Ubuntu Server 24.04 LTS<br/>Orthanc PACS"]
+        MOD["ORION-MOD01<br/>192.168.174.30<br/>Ubuntu Server 24.04 LTS<br/>DCMTK Modality"]
+    end
+
+    HOST --> VMNET
+    DC -->|DNS / orion.lab| PACS
+    DC -->|DNS / orion.lab| MOD
+    MOD <-->|DICOM<br/>C-ECHO / C-STORE / C-FIND / C-MOVE| PACS
+```
 
 ## Network Architecture
 
